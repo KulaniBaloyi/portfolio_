@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body{ 
+    line-height: 1.5;
+    font-family: "inter",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #F2F2F2;
+}
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(to bottom, #f59e0b, #059669);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar{
+  height: 8px;
+  width:8px;
+}
+.name-heading {
+  background-image: linear-gradient(to right, #f59e0b, #059669);
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  }
+  
+  .additional-detail::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top:1rem;
+    transform: translateY(-50%);
+    height: 5px;
+    width: 5px;
+    border-radius: 100vh;
+    background-color: #b91c1c;
+  }
+
+  .isOpen{
+    overflow: hidden;
+}
+
+.blog {
+  background-image: url("/blog-image.jpg")
+}
+
+
