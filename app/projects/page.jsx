@@ -1,4 +1,3 @@
-
 const Projects = () => {
   return (
     <div className='min-w-[300px] flex flex-col space-y-10 pb-10  w-[90%] lg:w-[80%] m-auto mt-[5.2rem]'>
