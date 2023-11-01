@@ -19,8 +19,6 @@ const Newsletter = () => {
         </form>
         </section>
         <p  className="text-base leading-7 font-normal p-[10%] border-t-2 ">🙅🏻  <span className="text-[rgba(25,26,23,0.5)]">Do not worry this will not be a weekly or even bi-weekly newsletter spamming your inbox. I will ping you only if I find something interesting to share with you or if I release a new project, blog or a video which I think might interest you.</span></p>
-       
-       
     </div>
   )
 }
