@@ -83,7 +83,7 @@ const Projects = () => {
        
       </div>
       <div className='order-first md:order-2 border w-full aspect-square relative rounded-lg overflow-hidden hover:scale-105 duration-500 transition-all ease-in-out'>
-        <Image src={"/chess-piece.jpg"} alt={"cover-image"} fill className='object-cover'/>
+        <Image src={"/png-transparent-queen-surrounded-by-pawns-thumbnail.png"} alt={"cover-image"} fill className='object-cover'/>
       </div>
         </li>
         <li className='grid grid-cols-1 md:grid-cols-2 gap-5'>

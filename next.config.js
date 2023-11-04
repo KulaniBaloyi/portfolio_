@@ -7,6 +7,10 @@ const nextConfig = {
             hostname: 'websitedemos.net',
           
           },
+          {
+            protocol:"https",
+            hostname:"images.ctfassets.net"
+          }
         
         ]
     }

@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint"
   },
-
   "dependencies": {
+    "contentful": "^10.6.5",
     "framer-motion": "^10.16.4",
     "moment-timezone": "^0.5.43",
     "next": "14.0.1",
