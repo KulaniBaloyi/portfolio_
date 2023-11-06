@@ -5,12 +5,12 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 //icons
-
 const Projects = () => {
   const router = useRouter()
   const handleClick = ()=>{
     router.push('/projects')
   }
+
   return (
     <>
     <section className='w-[90%] mx-auto min-w-[300px] flex flex-col space-y-10 my-10'>
