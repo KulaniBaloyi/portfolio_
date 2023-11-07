@@ -1,9 +1,37 @@
-
+import { client } from "@/lib/contentful"
 import Image from "next/image"
 import BlogPost from "../components/BlogPost"
 
-
+let data
 export default async function Blog () {
+
+    try{
+    const res = await client.getEntries()
+     data = res?.items.map((item)=>{
+     const {sys,fields}=item
+     const {id} =sys
+     console.log("fields: ",fields)
+     const title = fields.title
+     const slug = fields.slug
+     const readTime = fields.readTime
+     const coverImage = fields.coverImage.fields.file.url
+     const blog = {id,title,readTime,coverImage,slug}
+    //  console.log("blog: ", blog)
+ 
+    
+      return (
+        blog
+      )
+      
+    })
+  
+
+  }catch(err){
+    console.error(err)
+  }
+
+ 
+ 
   
   return (
   <div className="min-h-screen  mt-[5.2rem] m-auto  w-[90%] lg:w-[80%] flex flex-col">
@@ -28,12 +56,10 @@ export default async function Blog () {
           </div>
         </section>
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-10 md:gap-5 my-10">
-            <BlogPost/>
-            <BlogPost/>
-            <BlogPost/>
-            <BlogPost/>
-            <BlogPost/>
-            <BlogPost/>
+          {data?.map(b=> <BlogPost key={b.id} {...b}/>)}
+       
+           
+      
           
         </section>
         <button className="px-4 py-2 rounded-md border border-gray-800 text-gray-800 self-center my-5">View</button>
