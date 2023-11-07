@@ -8,7 +8,7 @@ export default async function Blog () {
   return (
   <div className="min-h-screen  mt-[5.2rem] m-auto  w-[90%] lg:w-[80%] flex flex-col">
     <section className="rounded-sm relative overflow-hidden h-[300px] lg:h-[500px] w-full">
-      <Image className="object-cover" fill alt="blog-cover-image" src={"/pexels-juan-alvarado-18113138.jpg"}/>
+      <Image className="object-cover" fill alt="blog-cover-image" src={"/diary.jpg"}/>
     </section>
     <section className="w-full my-10">
           <div className="flex items-center flex-wrap gap-5 justify-center uppercase font-bold text-xs">
