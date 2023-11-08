@@ -10,7 +10,7 @@ export default async function Blog () {
      data = res?.items.map((item)=>{
      const {sys,fields}=item
      const {id} =sys
-     console.log("fields: ",fields)
+    //  console.log("fields: ",fields)
      const title = fields.title
      const slug = fields.slug
      const readTime = fields.readTime
