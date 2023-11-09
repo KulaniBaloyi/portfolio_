@@ -9,6 +9,7 @@ const BlogPost = ({id,title,coverImage,readTime,slug}) => {
    const d = router.push(`/blog/${route}`)
 
   }
+  console.log(coverImage)
   return (
     <article onClick={()=>handleSlug(slug)} className="rounded-lg shadow-sm shadow-gray-200 hover:scale-105 duration-500 ease-in-out transition-all border flex flex-col overflow-hidden cursor-pointer">
          <section className=" bg-gray-200 w-full h-full aspect-video relative " >
@@ -16,7 +17,7 @@ const BlogPost = ({id,title,coverImage,readTime,slug}) => {
          </section>
          <section className="bg-white p-5 flex flex-col gap-5">
             <h1>{title}</h1>
-            <h2>{readTime}</h2>
+            <h2>{readTime} min</h2>
             
          </section>
     </article>

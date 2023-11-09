@@ -6,7 +6,7 @@ let data
 export default async function Blog () {
 
     try{
-    const res = await client.getEntries()
+    const res = await client.getEntries({include: 2})
      data = res?.items.map((item)=>{
      const {sys,fields}=item
      const {id} =sys
