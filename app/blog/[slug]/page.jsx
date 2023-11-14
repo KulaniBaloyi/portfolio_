@@ -1,4 +1,4 @@
-import RichText from "@/app/components/Richtext"
+import RichText from "@/app/components/RichText"
 import { client } from "@/lib/contentful"
 import Image from "next/image"
 
