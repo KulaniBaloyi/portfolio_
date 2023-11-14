@@ -74,7 +74,10 @@ catch(err){
       <p>{d.intro}</p>
       
       {console.log("d,content: ",d.content)}
- <RichText content={d.content}/>
+      <div className='mx-auto lg:w-4/5 w-[90%] prose'>
+      <RichText content={d.content} />
+    </div>
+
  <p>{d.conclusion}</p>
             
             </>
