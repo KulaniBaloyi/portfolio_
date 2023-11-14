@@ -1,5 +1,7 @@
 import { client } from "@/lib/contentful"
 import Image from "next/image"
+//import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+//documentToReactComponents(content,options)
 
 let newdata
 const IndividualBlog = async({params}) => {
