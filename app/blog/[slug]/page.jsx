@@ -1,5 +1,7 @@
+import RichText from "@/app/components/Richtext"
 import { client } from "@/lib/contentful"
 import Image from "next/image"
+
 //import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 //documentToReactComponents(content,options)
 
@@ -18,8 +20,11 @@ const IndividualBlog = async({params}) => {
   newdata = res?.items.map((item)=>{
     const {sys,fields}=item
     const {id} =sys
-    console.log("fields: ",fields)
+    //console.log("fields: ",fields)
     const title = fields.title
+    const { content } = fields
+    
+    //console.log('Content: ', content)
     const slug = fields.slug
     const readTime = fields.readTime
     const summary = fields.summary
@@ -29,8 +34,8 @@ const IndividualBlog = async({params}) => {
     //console.log("table of contents: ", tableOfContents)
 
     const coverImage = fields.coverImage.fields.file.url
-    const blog = {id,title,readTime,coverImage,slug,intro,conclusion,summary,tableOfContents}
-    console.log("blog: ", blog)
+    const blog = {id,title,readTime,coverImage,slug,intro,conclusion,summary,tableOfContents,content}
+    //console.log("blog: ", blog)
 
    
      return (
@@ -38,7 +43,7 @@ const IndividualBlog = async({params}) => {
      )
      
    })
-  console.log("slug : ", res)
+  //console.log("slug : ", res)
 }  
 catch(err){
  console.log("something went wrong!!!", err)
@@ -67,7 +72,10 @@ catch(err){
       })}
      
       <p>{d.intro}</p>
-      <p>{d.conclusion}</p>
+      
+      {console.log("d,content: ",d.content)}
+ <RichText content={d.content}/>
+ <p>{d.conclusion}</p>
             
             </>
           )
