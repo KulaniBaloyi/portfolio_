@@ -1,7 +1,7 @@
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Link from 'next/link'
-//import ContentfulImage from './ui/ContentfulImage'
+import ContentfulImage from './ContentfulImage'
 
 const options = {
   renderMark: {
@@ -65,17 +65,17 @@ const options = {
       }
     },
 
-    // [BLOCKS.EMBEDDED_ASSET]: node => {
-    //   return (
-    //     <ContentfulImage
-    //       src={node.data.target.fields.file.url}
-    //       height={node.data.target.fields.file.details.image.height}
-    //       width={node.data.target.fields.file.details.image.width}
-    //       alt={node.data.target.fields.title}
-    //       className='h-20 w-20'
-    //     />
-    //   )
-    // }
+    [BLOCKS.EMBEDDED_ASSET]: node => {
+      return (
+        <ContentfulImage
+          src={node.data.target.fields.file.url}
+          height={node.data.target.fields.file.details.image.height}
+          width={node.data.target.fields.file.details.image.width}
+          alt={node.data.target.fields.title}
+          className='h-96 w-full object-cover'
+        />
+      )
+    }
   }
 }
 

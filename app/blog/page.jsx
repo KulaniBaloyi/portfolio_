@@ -13,9 +13,10 @@ export default async function Blog () {
     //  console.log("fields: ",fields)
      const title = fields.title
      const slug = fields.slug
+     const summary = fields.summary
      const readTime = fields.readTime
      const coverImage = fields.coverImage.fields.file.url
-     const blog = {id,title,readTime,coverImage,slug}
+     const blog = {id,title,readTime,coverImage,slug,summary}
     //  console.log("blog: ", blog)
  
     
@@ -55,7 +56,7 @@ export default async function Blog () {
 
           </div>
         </section>
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-10 md:gap-5 my-10">
+        <section className="grid grid-cols-1 sm:grid-cols-2   gap-10 md:gap-5 my-10">
           {data?.map(b=> <BlogPost key={b.id} {...b}/>)}
        
            

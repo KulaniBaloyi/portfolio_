@@ -60,25 +60,25 @@ catch(err){
         
              <Image fill src={`https://${d.coverImage}`} alt={title} priority className="object-cover origin-center"/>
       </section>
-      <p>read time {d.readTime}min</p>
-      <p className="text-sm text-gray-600">Summary</p>
-      <p>{d.summary}</p>
-      <p>Topics covered: </p>
+      <p className="mx-auto prose">read time {d.readTime}min</p>
+      <p className="text-sm text-gray-600 mx-auto prose">Summary</p>
+      <p className="mx-auto prose">{d.summary}</p>
+      <p className="mx-auto prose">Topics covered: </p>
       {d.tableOfContents.map((item,index)=>{
         return<>
         
-        <p className="text-sm text-gray-600" key={index}>{item}</p></> 
+        <p className="text-sm text-gray-600 mx-auto prose" key={index}>{item}</p></> 
 
       })}
      
-      <p>{d.intro}</p>
+      <p className="mx-auto prose">{d.intro}</p>
       
-      {console.log("d,content: ",d.content)}
-      <div className='mx-auto lg:w-4/5 w-[90%] prose'>
+     
+      <div className='mx-auto prose'>
       <RichText content={d.content} />
     </div>
 
- <p>{d.conclusion}</p>
+ <p className="mx-auto prose">{d.conclusion}</p>
             
             </>
           )
