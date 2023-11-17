@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 
 const BlogPost = ({id,title,coverImage,readTime,slug,summary}) => {
+ 
   const router = useRouter()
   const handleSlug= (route)=>{
 
