@@ -63,13 +63,13 @@ catch(err){
       <p className="mx-auto prose">read time {d.readTime}min</p>
       <p className="text-sm text-gray-600 mx-auto prose">Summary</p>
       <p className="mx-auto prose">{d.summary}</p>
-      <p className="mx-auto prose">Topics covered: </p>
+      {/* <p className="mx-auto prose">Topics covered: </p>
       {d.tableOfContents.map((item,index)=>{
         return<>
         
         <p className="text-sm text-gray-600 mx-auto prose" key={index}>{item}</p></> 
 
-      })}
+      })} */}
      
       <p className="mx-auto prose">{d.intro}</p>
       <div className='mx-auto prose'>
