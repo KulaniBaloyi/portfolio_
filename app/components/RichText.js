@@ -79,7 +79,7 @@ const options = {
   }
 }
 
-const RichText = ({ content }) => {
+const RichText = ({content}) => {
   return <>{documentToReactComponents(content, options)}</>
 }
 
