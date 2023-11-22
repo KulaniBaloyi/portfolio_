@@ -46,8 +46,8 @@ const ImportantUpdates = () => {
                     </div>
                 </li>
            
-                <li onClick={()=>router.push("/blog/pointers in go")} className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
-                <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base ">Pointers in GO</h2>
+                <li onClick={()=>router.push("/blog/a-comprehensive-guide-to-pointers-in-go")} className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
+                <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base ">A Comprehensive Guide To Pointers in GO</h2>
                     <p className="col-span-6 lg:col-span-1 place-self-start text-white lg:place-self-center bg-gray-800 rounded-md p-1 px-2">Blog</p>
                     <p className="col-span-6 lg:col-span-1 text-gray-500 lg:place-self-center">Coming Soon</p>
                     <div className="hidden lg:flex gap-2 items-center font-semibold lg:place-self-end">
@@ -58,7 +58,7 @@ const ImportantUpdates = () => {
 
                     </div>
                 </li>
-                <li onClick={()=>router.push("/blog/litmus test")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
+                <li onClick={()=>router.push("/blog/litmus-test")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
                 <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base ">Litmus test</h2>
                 <p className="col-span-6 lg:col-span-1 place-self-start text-white lg:place-self-center bg-gray-800 rounded-md p-1 px-2">Blog</p>
                     <p className="col-span-6 lg:col-span-1 text-gray-500 lg:place-self-center">Coming Soon</p>
@@ -70,7 +70,7 @@ const ImportantUpdates = () => {
 
                     </div>
                 </li>
-                <li onClick={()=>router.push("/article/Cloud Computing Security: How to Protect Your Data")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
+                <li onClick={()=>router.push("/article/cloud-computing-security-how-to-protect-your-data")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
                 <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base ">Cloud Computing Security: How to Protect Your Data</h2>
                 <p className="col-span-6 lg:col-span-1 place-self-start text-white lg:place-self-center bg-amber-500 rounded-md p-1 px-2">Article</p>
                     <p className="col-span-6 lg:col-span-1 text-gray-500 lg:place-self-center">Coming Soon</p>
@@ -82,7 +82,7 @@ const ImportantUpdates = () => {
 
                     </div>
                 </li>
-                <li onClick={()=>router.push("/blog/dinning philosiphers problem")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
+                <li onClick={()=>router.push("/blog/dinning-philosophers-problem")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
                 <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base ">Dinning philosiphers problem</h2>
                 <p className="col-span-6 lg:col-span-1 place-self-start text-white lg:place-self-center bg-gray-800 rounded-md p-1 px-2">Blog</p>
                     <p className="col-span-6 lg:col-span-1 text-gray-500 lg:place-self-center">Coming Soon</p>
@@ -94,7 +94,7 @@ const ImportantUpdates = () => {
 
                     </div>
                 </li>
-                <li onClick={()=>router.push("/blog/travelling salesman problem")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
+                <li onClick={()=>router.push("/blog/travelling-salesman-problem")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
                 <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base ">Travelling Salesman problem</h2>
                 <p className="col-span-6 lg:col-span-1 place-self-start text-white lg:place-self-center bg-gray-800 rounded-md p-1 px-2">Blog</p>
                     <p className="col-span-6 lg:col-span-1 text-gray-500 lg:place-self-center">Coming Soon</p>
@@ -106,7 +106,7 @@ const ImportantUpdates = () => {
 
                     </div>
                 </li>
-                <li onClick={()=>router.push("/blog/caching in next13")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
+                {/* <li onClick={()=>router.push("/blog/caching in next13")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
                 <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base">Caching in Next 13</h2>
                 <p className="col-span-6 lg:col-span-1 place-self-start text-white lg:place-self-center bg-gray-800 rounded-md p-1 px-2">Blog</p>
                     <p className="col-span-6 lg:col-span-1 text-gray-500 lg:place-self-center">Coming Soon</p>
@@ -117,7 +117,7 @@ const ImportantUpdates = () => {
                         </svg>
 
                     </div>
-                </li>
+                </li> */}
                 
          
               
