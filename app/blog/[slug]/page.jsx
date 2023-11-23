@@ -55,7 +55,6 @@ catch(err){
       {newdata&&newdata.map(d=>{
           return(
             <>
-           
              <section className="h-[500px] w-full relative border rounded-lg overflow-hidden">
         
              <Image fill src={`https://${d.coverImage}`} alt={title} priority className="object-cover origin-center"/>
