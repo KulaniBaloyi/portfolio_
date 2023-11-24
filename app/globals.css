@@ -72,5 +72,26 @@ body{
 .blog {
   background-image: url("/blog-image.jpg")
 }
+.custom-li {
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.custom-li::before {
+  content: "•";
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.custom-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 

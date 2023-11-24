@@ -14,6 +14,9 @@ const options = {
     }
   },
   renderNode: {
+    [BLOCKS.HEADING_5]: (node, children) => {
+      return <h1 className=''>{children}</h1>
+    },
     [BLOCKS.PARAGRAPH]: (node, children) => {
       if (
         node.content.find(item =>
@@ -29,8 +32,21 @@ const options = {
         )
       }
 
-      return <p>{children}</p>
+      return <p className=''>{children}</p>
     },
+    [BLOCKS.UL]: (node, children) => {
+      return (
+        <ul className="custom-ul">
+          {children}
+        </ul>
+      );
+    },
+    [BLOCKS.LI]: (node, children) => {
+      return (
+        <li className="custom-li">
+          {children}
+        </li>
+      )},
 
     [INLINES.ENTRY_HYPERLINK]: node => {
       if (node.data.target.sys.contentType.sys.id === 'post') {
