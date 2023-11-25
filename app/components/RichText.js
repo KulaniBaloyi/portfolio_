@@ -31,7 +31,6 @@ const options = {
           </div>
         )
       }
-
       return <p className=''>{children}</p>
     },
     [BLOCKS.UL]: (node, children) => {
