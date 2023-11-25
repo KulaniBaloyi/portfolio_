@@ -22,7 +22,6 @@ const BlogPost = ({id,title,coverImage,readTime,slug,summary}) => {
     <h2 className="text-[#707070] text-lg font-normal opacity-70 overflow-hidden text-ellipsis ">{summary}</h2>
   </section>
 </article>
-   
   )
 }
 
