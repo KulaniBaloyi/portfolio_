@@ -13,6 +13,7 @@ const options = {
       )
     }
   },
+  
   renderNode: {
     [BLOCKS.HEADING_5]: (node, children) => {
       return <h1 className=''>{children}</h1>
@@ -31,7 +32,7 @@ const options = {
           </div>
         )
       }
-      
+
       return <p className=''>{children}</p>
     },
     [BLOCKS.UL]: (node, children) => {
