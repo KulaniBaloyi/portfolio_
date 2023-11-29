@@ -11,6 +11,8 @@ const Header = () => {
   const [isMounted,setIsMounted] = useState(false)
   const [isScrolled,setIsScrolled]= useState(false)
   const openMenu = useMenu(state=>state.onOpen)
+  const path = usePathname()
+  console.log("path", path)
 
   const handleEmailClick = () => {
     const email = 'kulani17@yahoo.com'
@@ -48,15 +50,15 @@ if(!isMounted)return
         </div>
         </Link>
       
-        <div className="lg:flex hidden gap-12 text-md text-zinc-400">
-          <Link href="/about" className="text-black font-medium">
-           <p>What I do</p>
+        <div className="lg:flex hidden gap-12 text-md text-black">
+          <Link href="/about" className="">
+           <p className={`${path=="/about"&&"text-gray-400"}`}>What I do</p>
           </Link>
           <Link href={"/projects"}>
-           <p>Projects</p>
+           <p  className={`${path.startsWith("/projects")&&"text-gray-400"}`}>Projects</p>
           </Link>
           <Link href={"/blog"}>
-           <p>Blog</p>
+           <p  className={`${path.startsWith("/blog")&&"text-gray-400"}`}>Blog</p>
           </Link>
           
            <p className="cursor-pointer" onClick={()=>handleEmailClick()}>Contact</p>
