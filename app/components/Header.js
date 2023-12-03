@@ -60,9 +60,7 @@ if(!isMounted)return
           <Link href={"/blog"}>
            <p  className={`${path.startsWith("/blog")&&"text-gray-400"}`}>Blog</p>
           </Link>
-          
            <p className="cursor-pointer" onClick={()=>handleEmailClick()}>Contact</p>
-          
         </div>
         <div
           className="cursor-pointer lg:hidden text-md"
