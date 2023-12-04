@@ -50,7 +50,7 @@ catch(err){
 
   }
   return (
-    <div className='min-h-screen flex flex-col mt-[5.2rem] gap-10 text-3xl w-[90%]  lg:w-4/5 mx-auto pb-10'>
+    <div className='min-h-screen flex flex-col mt-[5.2rem] gap-10 text-3xl '>
       <h1 className="leading-[1.5em] text-5xl font-bold text-center mt-[1em] capitalize">{title}</h1>
       {newdata&&newdata.map(d=>{
           return(
@@ -59,7 +59,10 @@ catch(err){
         
              <Image fill src={`https://${d.coverImage}`} alt={title} priority className="object-cover origin-center"/>
       </section>
-      <p className="mx-auto prose">read time {d.readTime}min</p>
+      <section className="border grid grid-cols-4">
+        <p className="border p-5">dsf</p>
+        <p className="border p-5 col-span-2">
+        <p className="mx-auto prose">read time {d.readTime}min</p>
       <p className="text-sm text-gray-600 mx-auto prose">Summary</p>
       <p className="mx-auto prose">{d.summary}</p>
       {/* <p className="mx-auto prose">Topics covered: </p>
@@ -76,7 +79,11 @@ catch(err){
       <RichText content={d.content} />
     </div>
 
- <p className="mx-auto prose">{d.conclusion}</p>      
+ <p className="mx-auto prose">{d.conclusion}</p>  
+        </p>
+        <p className="border p-5">ghgfh</p>
+      </section>
+         
             </>
           )
         })}
