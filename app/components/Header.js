@@ -69,9 +69,6 @@ if(!isMounted)return
           Menu
         </div>
       </nav>
-      
-       
-     
     </header>
    
     </>
