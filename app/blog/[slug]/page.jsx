@@ -75,7 +75,6 @@ catch(err){
      
       <p className="mx-auto prose">{d.intro}</p>
       <div className='mx-auto prose'>
-    
       <RichText content={d.content} />
     </div>
  <p className="mx-auto prose">{d.conclusion}</p>  
