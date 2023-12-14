@@ -93,7 +93,7 @@ const ImportantUpdates = () => {
                         </svg>
                     </div>
                 </li>
-                
+
                 <li onClick={()=>router.push("/blog/travelling-salesman-problem")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
                 <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base ">Travelling Salesman problem</h2>
                 <p className="col-span-6 lg:col-span-1 place-self-start text-white lg:place-self-center bg-gray-800 rounded-md p-1 px-2">Blog</p>
@@ -103,7 +103,6 @@ const ImportantUpdates = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="text-gray-400 group-hover:translate-x-1 ease-in-out transition-all duration-150 w-5 h-5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                         </svg>
-
                     </div>
                 </li>
                 {/* <li onClick={()=>router.push("/blog/caching in next13")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
