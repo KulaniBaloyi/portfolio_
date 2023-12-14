@@ -70,7 +70,6 @@ catch(err){
         return<>
         <p className="text-sm text-gray-600 mx-auto prose" key={index}>{item}</p></> 
       })} */}
-
       <p className="mx-auto prose">{d.intro}</p>
       <div className='mx-auto prose'>
       <RichText content={d.content} />
