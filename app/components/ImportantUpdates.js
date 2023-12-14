@@ -93,6 +93,7 @@ const ImportantUpdates = () => {
                         </svg>
                     </div>
                 </li>
+                
                 <li onClick={()=>router.push("/blog/travelling-salesman-problem")}  className="py-5 grid grid-cols-6 flex-wrap cursor-pointer gap-2 group border-b">
                 <h2 className="col-span-6 lg:col-span-3 font-[500] text-gray-800 text-base ">Travelling Salesman problem</h2>
                 <p className="col-span-6 lg:col-span-1 place-self-start text-white lg:place-self-center bg-gray-800 rounded-md p-1 px-2">Blog</p>
