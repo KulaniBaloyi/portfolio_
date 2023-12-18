@@ -117,11 +117,6 @@ const ImportantUpdates = () => {
 
                     </div>
                 </li> */}
-                
-         
-              
-            
-                
             </ul>
         </section>
     </section>
