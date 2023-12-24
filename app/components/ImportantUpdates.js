@@ -116,7 +116,6 @@ const ImportantUpdates = () => {
                         </svg>
                     </div>
                 </li> */}
-                
             </ul>
         </section>
     </section>
